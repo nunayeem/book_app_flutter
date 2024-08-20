@@ -55,7 +55,10 @@ class NavBar extends StatelessWidget {
             leading: Icon(Icons.notifications),
             title: Text('Notification'),
             onTap: () {
-              print("Hello Notification Tap");
+              Fluttertoast.showToast(
+                msg: "Hello Notification",
+                toastLength: Toast.LENGTH_SHORT,
+              );
             },
             trailing: ClipOval(
               child: Container(
